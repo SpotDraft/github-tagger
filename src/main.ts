@@ -19,8 +19,8 @@ async function run() {
     });
   } catch (error) {
     if (error instanceof Error) {
-    core.error(error);
-    core.setFailed(error.message);
+      core.error(error);
+      core.setFailed(error.message);
     }
   }
 }
