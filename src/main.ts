@@ -18,7 +18,7 @@ async function run() {
     });
 
   } catch (error) {
-    core.error(error);
+    core.error(error); //test
     core.setFailed(error.message);
   }
 }
