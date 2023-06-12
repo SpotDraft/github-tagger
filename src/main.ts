@@ -18,8 +18,10 @@ async function run() {
       sha: sha
     });
   } catch (error) {
+    if (error instanceof Error) {
     core.error(error);
     core.setFailed(error.message);
+    }
   }
 }
 
